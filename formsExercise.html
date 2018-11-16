@@ -1,0 +1,64 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form Exercise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Register</h1>
+    <form>
+        <div>
+            <label for="firstName">first Name</label>
+            <input name="firstName" id="firstName" placeholder="John" required />
+            <label for="lastName">Last Name</label>
+            <input name="lastName" id="lastName" placeholder="Smith" required />
+        </div>
+
+        <div>
+            <label for="male">Male</label>
+            <input id="male" name="gender" type="radio" value="Male"/>
+            <label for="female">Female</label>
+            <input name="gender" id="female" type="radio" value="Female"/>
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="Other"/>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="your email" required />
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="password" minlength="5" maxlength="10" rerequid title="يجب على كلمة السر أن تكون بين 5و 10 أحرف"/>
+        </div>
+        <div>
+            <label >Birthday:</label>
+            <select for="month">
+                <option value="">Monh</option>
+                <option value="jan">january</option>
+                <option value="mar">march</option>
+                <option value="feb">february</option>
+            </select>
+            <select for="day">
+                <option value="">Day</option>
+                <option value="sun">Sunday</option>
+                <option value="mon">Monday</option>
+                <option value="thr">Thersday</option>
+            </select>
+            <select for="year">
+                <option value="">Year</option>
+                <option value="1991">1991</option>
+                <option value="2018">2018</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="contract">I agree to the term and condition</label>
+            <input type="checkbox" name="contract" id="contract"/>
+        </div>
+            <input type="submit"/>
+    </form>
+</body>
+</html>
